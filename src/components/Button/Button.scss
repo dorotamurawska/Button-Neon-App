@@ -1,0 +1,40 @@
+button.btn {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    // width: 200px;
+    // height: 30px;
+    padding: 20px 30px;
+    line-height: 30px;
+    transform: translate(-50%,-50%) perspective(0px) rotateX(0deg) scale(1);
+    background-color: #00c1f1;
+    box-shadow: 0 15px 40px rgba(0, 193, 241, 0.5);
+    border: none;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.wrap .btn:active {
+    transform: translate(-50%,-50%) perspective(800px) rotateX(15deg) scale(0.9);
+    font-size: 22px;
+    box-shadow: 0 20px 40px rgba(0, 204, 255, 0.5);
+}
+
+.wrap.clicked .btn:active, .wrap.clicked .btn:focus {
+    transform: translate(-50%,-50%) perspective(0px) rotateX(0deg) scale(1);
+    font-size: 24px;
+    box-shadow: 0 15px 40px rgba(0, 193, 241, 0.5);
+    background-color: #00c1f1;
+}
+
+.wrap.clicked .btn:hover, .wrap .btn:hover {
+    background-color: #01a5ce;
+}
