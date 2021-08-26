@@ -1,0 +1,29 @@
+span.bubbles {
+    position: absolute;
+    background-color: #00c1f1b4;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #00C1F1;
+    transform: translate(-50%,-50%) scale(1) perspective(800px);
+    visibility: hidden;
+
+    &.bubbles:nth-of-type(even){
+        border: solid 2px #00c1f1b4;
+        background-color: transparent;
+    }
+
+    &.bubbles-wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100vh;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1;
+    }
+}
